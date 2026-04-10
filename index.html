@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shejal Yadav Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {opacity:0; transform:translateY(20px); transition: all 0.8s ease;}
+    .fade-in.show {opacity:1; transform:translateY(0);}
+  </style>
+</head>
+<body id="body" class="bg-gray-900 text-white transition duration-500">
+ 
+<!-- Toggle Button -->
+<div class="fixed top-4 right-4 z-50">
+  <button onclick="toggleTheme()" class="bg-cyan-400 text-black px-4 py-2 rounded-full shadow">🌗</button>
+</div>
+ 
+<header class="text-center p-10 fade-in">
+  <img src="profile.jpg" class="w-32 h-32 mx-auto rounded-full border-4 border-cyan-400 shadow-lg">
+  <h1 class="text-4xl font-bold mt-4">Shejal Yadav</h1>
+  <p class="text-cyan-400">Web Developer | UI/UX Enthusiast</p>
+ 
+  <!-- Resume Button -->
+  <a href="Shejal Yadav_Resume 1.pdf" download class="inline-block mt-6 bg-cyan-400 text-black px-6 py-2 rounded-full font-semibold shadow hover:scale-105 transition">
+    ⬇ Download Resume
+  </a>
+</header>
+ 
+<section class="p-8 max-w-3xl mx-auto fade-in">
+  <h2 class="text-2xl font-semibold text-cyan-400">About Me</h2>
+  <p class="mt-3 text-gray-300">I am an MSc IT student with a strong interest in web development. I have completed an internship at Maharashtra Cyber, where I worked on user interface design in the AI department, gaining hands-on experience in creating user-friendly and responsive designs. I have a solid foundation in HTML, CSS, JavaScript, and basic Python, and I am continuously improving my skills through projects and self-learning. I am a quick learner, highly motivated, and eager to start my career in the IT industry where I can contribute and grow.</p>
+</section>
+ 
+<section class="p-8 max-w-3xl mx-auto fade-in">
+  <h2 class="text-2xl font-semibold text-cyan-400">Skills</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+    <div class="bg-gray-800 p-4 rounded-xl">HTML</div>
+    <div class="bg-gray-800 p-4 rounded-xl">CSS</div>
+    <div class="bg-gray-800 p-4 rounded-xl">JavaScript</div>
+    <div class="bg-gray-800 p-4 rounded-xl">Python</div>
+    <div class="bg-gray-800 p-4 rounded-xl">SQL</div>
+    <div class="bg-gray-800 p-4 rounded-xl">Excel</div>
+    <div class="bg-gray-800 p-4 rounded-xl">React</div>
+    <div class="bg-gray-800 p-4 rounded-xl">Communication</div>
+    <div class="bg-gray-800 p-4 rounded-xl">Quick learner</div>
+  </div>
+</section>
+ 
+<section class="p-8 max-w-3xl mx-auto fade-in">
+  <h2 class="text-2xl font-semibold text-cyan-400">Projects</h2>
+  <div class="space-y-4 mt-4">
+    <div class="bg-gray-800 p-4 rounded-xl">
+      <h3 class="font-bold">Aqua Angel Web App</h3>
+      <p class="text-gray-400">AquaAngel is a web-based platform developed to assist pet owners in managing the health and nutrition of their animals. The application provides personalized food recommendations based on the pet’s needs and allows users to conveniently order food through the platform. It also includes an AI-powered chatbot that acts like a virtual assistant, offering guidance on common health issues and helping users take better care of their pets.The system aims to simplify pet care by combining health support and e-commerce features in one place.</p>
+      <a href="#" class="text-cyan-400">🔗 View Project</a>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-xl">
+      <h3 class="font-bold">AI Fitness System</h3>
+      <p class="text-gray-400">This project is an intelligent system designed to provide personalized fitness and diet recommendations. It collects user data such as age, weight, height, lifestyle, and health conditions, and analyzes it using AI techniques to generate tailored workout plans and meal suggestions. The system adapts over time based on user progress and feedback, ensuring continuous improvement in recommendations. The goal is to make fitness and nutrition guidance more accessible, efficient, and user-friendly.</p>
+      <a href="#" class="text-cyan-400">🔗 View Project</a>
+    </div>
+    <div class="bg-gray-800 p-4 rounded-xl">
+      <h3 class="font-bold">Face recognition-based attendance system </h3>
+      <p class="text-gray-400">This project is a face recognition-based attendance system designed to automate the process of marking attendance. It captures live images through a camera and uses computer vision techniques to detect and recognize faces. The system compares detected faces with stored data and automatically records attendance in a database. It reduces manual effort, minimizes proxy attendance, and improves accuracy and reliability.</p>
+      <a href="#" class="text-cyan-400">🔗 View Project</a>
+    </div>
+  </div>
+</section>
+ 
+<section class="p-8 max-w-3xl mx-auto fade-in">
+  <h2 class="text-2xl font-semibold text-cyan-400">Experience</h2>
+  <div class="bg-gray-800 p-4 rounded-xl mt-4">
+    <p>Maharashtra Cyber - UI Design Intern and Maharashtra Cyber headquarter A proactive intern specializing in social media monitoring at Maharashtra Cyber
+Headquarters, aiming to leverage analyticalskills and digital insights to support strategic decision-making and enhance
+online presence.</p>
+  </div>
+</section>
+ 
+<section class="p-8 max-w-3xl mx-auto fade-in">
+  <h2 class="text-2xl font-semibold text-cyan-400">Contact</h2>
+  <p>Email: shejalyadav55@gmail.com</p>
+  <p>Phone: 8080991102</p>
+  <p><a href="https://www.linkedin.com/in/shejal-yadav-235038269" class="text-cyan-400">LinkedIn</a></p>
+</section>
+ 
+<footer class="text-center p-5 text-gray-500 fade-in">© 2026 Shejal Yadav</footer>
+ 
+<script>
+function toggleTheme(){
+  const body = document.getElementById('body');
+  body.classList.toggle('bg-white');
+  body.classList.toggle('text-black');
+  body.classList.toggle('bg-gray-900');
+  body.classList.toggle('text-white');
+}
+ 
+const elements = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+});
+ 
+elements.forEach(el => observer.observe(el));
+</script>
+ 
+</body>
+</html>
